@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Weather App</h1>
+      <img src="./svg/menu.svg" alt="" height="25px" width="25px" />
+    </header>
+    <div class="container">
+      <section class="today-weather">
+        <h2>Today's Weather</h2>
+        <div class="city-section">
+          <h2>Clermont-Ferrand</h2>
+        </div>
+            <div class="weather description">
+            <h2 id="weather-description">Description</h2>
+            </div>
+            <div class="temperature-section">
+            <h3 id="temperature-section">0°C</h3>
+            </div>
+      </section>
+      <nav class="side-menu hidden">
+        <ul>
+          <li>
+            <div>Current city selected</div>
+            <form action="app.js">
+                <div>
+            <input id="city-input" type="text" placeholder="City name" value="Clermont-Ferrand"/>
+            <input id="country-input" type="text" placeholder="Country name" value="France">
+            </div>
+            <input id="city-submit" type="submit"></input>
+            </form>
+          </li>
+          <li>Add a city to your favorite's list</li>
+          <li>3</li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
